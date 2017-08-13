@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BackEnd.Controllers.Models
+namespace BackEnd.Models
 {
     public class Speaker
     {

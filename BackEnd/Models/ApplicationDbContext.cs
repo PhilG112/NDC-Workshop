@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace BackEnd.Controllers.Models
+namespace BackEnd.Models
 {
     public class ApplicationDbContext : DbContext
     {
