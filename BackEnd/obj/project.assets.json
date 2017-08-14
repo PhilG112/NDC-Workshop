@@ -13253,12 +13253,15 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Phillip\\Documents\\Visual Studio 2017\\Projects\\ConferencePlanner\\BackEnd\\BackEnd.csproj",
+      "projectUniqueName": "c:\\users\\phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\BackEnd\\BackEnd.csproj",
       "projectName": "BackEnd",
-      "projectPath": "C:\\Users\\Phillip\\Documents\\Visual Studio 2017\\Projects\\ConferencePlanner\\BackEnd\\BackEnd.csproj",
+      "projectPath": "c:\\users\\phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\BackEnd\\BackEnd.csproj",
       "packagesPath": "C:\\Users\\Phillip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Phillip\\Documents\\Visual Studio 2017\\Projects\\ConferencePlanner\\BackEnd\\obj\\",
+      "outputPath": "c:\\users\\phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\BackEnd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13277,8 +13280,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Phillip\\Documents\\Visual Studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj": {
-              "projectPath": "C:\\Users\\Phillip\\Documents\\Visual Studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj"
+            "c:\\users\\phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj": {
+              "projectPath": "c:\\users\\phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj"
             }
           }
         }
@@ -13292,22 +13295,22 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
           },
-          "Microsoft.AspNetCore.All": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
           "Swashbuckle.aspnetcore": {
             "target": "Package",
             "version": "1.0.0"
+          },
+          "Microsoft.AspNetCore.All": {
+            "target": "Package",
+            "version": "2.0.0"
           }
         },
         "imports": [

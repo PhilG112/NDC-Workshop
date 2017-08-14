@@ -1,0 +1,13 @@
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\bin\Debug\netcoreapp2.0\FrontEnd.deps.json
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\bin\Debug\netcoreapp2.0\FrontEnd.runtimeconfig.json
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\bin\Debug\netcoreapp2.0\FrontEnd.runtimeconfig.dev.json
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\bin\Debug\netcoreapp2.0\FrontEnd.dll
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\bin\Debug\netcoreapp2.0\FrontEnd.pdb
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\bin\Debug\netcoreapp2.0\ConferenceDTO.dll
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\bin\Debug\netcoreapp2.0\ConferenceDTO.pdb
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\obj\Debug\netcoreapp2.0\FrontEnd.csprojResolveAssemblyReference.cache
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\obj\Debug\netcoreapp2.0\FrontEnd.csproj.CoreCompileInputs.cache
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\obj\Debug\netcoreapp2.0\FrontEnd.AssemblyInfoInputs.cache
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\obj\Debug\netcoreapp2.0\FrontEnd.AssemblyInfo.cs
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\obj\Debug\netcoreapp2.0\FrontEnd.dll
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\obj\Debug\netcoreapp2.0\FrontEnd.pdb

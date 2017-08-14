@@ -65,6 +65,9 @@ namespace BackEnd
                 context.Response.Redirect("/swagger");
                 return Task.CompletedTask;
             });
+
+            // Comment out the following line to avoid resetting the database each time
+            NDCSydneyData.Seed(app.ApplicationServices);
         }
     }
 }
