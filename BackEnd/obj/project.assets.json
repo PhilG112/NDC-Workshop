@@ -5092,6 +5092,19 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "ConferenceDTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.4.0"
+        },
+        "compile": {
+          "bin/placeholder/ConferenceDTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConferenceDTO.dll": {}
+        }
       }
     }
   },
@@ -13218,10 +13231,16 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "ConferenceDTO/1.0.0": {
+      "type": "project",
+      "path": "../ConferenceDTO/ConferenceDTO.csproj",
+      "msbuildProject": "../ConferenceDTO/ConferenceDTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "ConferenceDTO >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.0",
@@ -13260,7 +13279,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\users\\phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj": {
+              "projectPath": "c:\\users\\phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

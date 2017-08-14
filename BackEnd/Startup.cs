@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using System.Runtime.InteropServices;
 using Microsoft.EntityFrameworkCore;
 using BackEnd.Models;
@@ -28,6 +23,7 @@ namespace BackEnd
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvcCore()
+                .AddDataAnnotations()
                 .AddJsonFormatters()
                 .AddApiExplorer();
 

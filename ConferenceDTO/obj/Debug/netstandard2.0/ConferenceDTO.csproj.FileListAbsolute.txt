@@ -1,0 +1,9 @@
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\bin\Debug\netstandard2.0\ConferenceDTO.deps.json
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\bin\Debug\netstandard2.0\ConferenceDTO.dll
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\bin\Debug\netstandard2.0\ConferenceDTO.pdb
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\obj\Debug\netstandard2.0\ConferenceDTO.csprojResolveAssemblyReference.cache
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\obj\Debug\netstandard2.0\ConferenceDTO.csproj.CoreCompileInputs.cache
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\obj\Debug\netstandard2.0\ConferenceDTO.AssemblyInfoInputs.cache
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\obj\Debug\netstandard2.0\ConferenceDTO.AssemblyInfo.cs
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\obj\Debug\netstandard2.0\ConferenceDTO.dll
+c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\obj\Debug\netstandard2.0\ConferenceDTO.pdb
