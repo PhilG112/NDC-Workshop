@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Runtime.InteropServices;
 using Microsoft.EntityFrameworkCore;
-using BackEnd.Models;
+using BackEnd.Data;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace BackEnd
