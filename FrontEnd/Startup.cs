@@ -24,6 +24,14 @@ namespace FrontEnd
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Admin", policy =>
+                {
+                    policy.RequireAuthenticatedUser()
+                          .RequireUserName(Configuration["Admin"]);
+                });
+            });
             var authBuilder = services
             .AddAuthentication(options =>
             {
@@ -49,7 +57,11 @@ namespace FrontEnd
                 authBuilder.AddGoogle(options => googleConfig.Bind(options));
             }
 
-            services.AddMvc();
+            services.AddMvc()
+                .AddRazorPagesOptions(options =>
+                {
+                    options.Conventions.AuthorizeFolder("/Admin", "Admin");
+                });
 
             var httpClient = new HttpClient
             {

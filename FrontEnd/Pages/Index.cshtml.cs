@@ -6,16 +6,19 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using FrontEnd.Services;
 using ConferenceDTO;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FrontEnd.Pages
 {
     public class IndexModel : PageModel
     {
         protected readonly IApiClient _apiClient;
+        private readonly IAuthorizationService _authService;
 
-        public IndexModel(IApiClient apiClient)
+        public IndexModel(IApiClient apiClient, IAuthorizationService authService)
         {
             _apiClient = apiClient;
+            _authService = authService;
         }
 
         public IEnumerable<IGrouping<DateTimeOffset?, SessionResponse>> Sessions { get; set; }
@@ -24,8 +27,18 @@ namespace FrontEnd.Pages
 
         public int CurrentDayOffset { get; set; }
 
+        public bool IsAdmin { get; set; }
+
+        [TempData]
+        public string Message { get; set; }
+
+        public bool ShowMessage => !string.IsNullOrEmpty(Message);
+
         public async Task OnGetAsync(int day = 0)
         {
+            var authResult = await _authService.AuthorizeAsync(User, "Admin");
+            IsAdmin = authResult.Succeeded;
+
             CurrentDayOffset = day;
 
             var sessions = await _apiClient.GetSessionsAsync();
