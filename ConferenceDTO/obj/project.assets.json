@@ -3187,11 +3187,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "c:\\users\\phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj",
+      "projectUniqueName": "C:\\Users\\Phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj",
       "projectName": "ConferenceDTO",
-      "projectPath": "c:\\users\\phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj",
+      "projectPath": "C:\\Users\\Phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj",
       "packagesPath": "C:\\Users\\Phillip\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\obj\\",
+      "outputPath": "C:\\Users\\Phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -13241,11 +13241,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "c:\\users\\phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\BackEnd\\BackEnd.csproj",
+      "projectUniqueName": "C:\\Users\\Phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\BackEnd\\BackEnd.csproj",
       "projectName": "BackEnd",
-      "projectPath": "c:\\users\\phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\BackEnd\\BackEnd.csproj",
+      "projectPath": "C:\\Users\\Phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\BackEnd\\BackEnd.csproj",
       "packagesPath": "C:\\Users\\Phillip\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\BackEnd\\obj\\",
+      "outputPath": "C:\\Users\\Phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\BackEnd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13264,8 +13264,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "c:\\users\\phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj": {
-              "projectPath": "c:\\users\\phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj"
+            "C:\\Users\\Phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj": {
+              "projectPath": "C:\\Users\\Phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj"
             }
           }
         }
