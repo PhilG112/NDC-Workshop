@@ -3,3 +3,18 @@
 @{
     ViewData["Title"] = "Home page";
 }
+
+<div class="agenda">
+    <h1>NDC Sydney 2017</h1>
+
+    @foreach (var timeSlot in Model.Sessions)
+     {
+        <h4>@timeSlot.Key?.ToString("HH:mm")</h4>
+        <ul>
+            @foreach (var session in timeSlot)
+             {
+                <li>@session.Title</li>
+             }
+        </ul>
+     }
+</div>
