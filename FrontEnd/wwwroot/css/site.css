@@ -33,3 +33,16 @@ body {
         display: none;
     }
 }
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.agenda .session {
+    height: 160px;
+}
+
+.speaker-list .speaker {
+    height: 140px;
+}
