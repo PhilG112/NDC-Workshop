@@ -11,3 +11,4 @@ c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEn
 c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\obj\Debug\netcoreapp2.0\FrontEnd.AssemblyInfo.cs
 c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\obj\Debug\netcoreapp2.0\FrontEnd.dll
 c:\users\phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\obj\Debug\netcoreapp2.0\FrontEnd.pdb
+C:\Users\Phillip\documents\visual studio 2017\Projects\ConferencePlanner\FrontEnd\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

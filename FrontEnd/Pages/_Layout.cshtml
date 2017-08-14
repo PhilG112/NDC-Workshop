@@ -33,6 +33,21 @@
                     <li><a asp-page="/Index">Home</a></li>
                     <li><a asp-page="/Search">Search</a></li>
                 </ul>
+                <form asp-controller="account" asp-action="logout" method="post" id="logoutForm" class="navbar-right">
+                    <ul class="nav navbar-nav navbar-right">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li><a>@Context.User.Identity.Name</a></li>
+                            <li>
+                                <button type="submit" class="btn btn-link navbar-btn navbar-link">Log out</button>
+                            </li>
+                        }
+                        else
+                        {
+                            <li><a asp-page="/Login">Log in</a></li>
+                        }
+                    </ul>
+                </form>
             </div>
         </div>
     </nav>

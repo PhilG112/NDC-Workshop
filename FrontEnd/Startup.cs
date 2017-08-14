@@ -37,6 +37,18 @@ namespace FrontEnd
                 options.AccessDeniedPath = "/Denied";
             });
 
+            var twitterConfig = Configuration.GetSection("twitter");
+            if (twitterConfig["consumerKey"] != null)
+            {
+                authBuilder.AddTwitter(options => twitterConfig.Bind(options));
+            }
+
+            var googleConfig = Configuration.GetSection("google");
+            if (googleConfig["clientID"] != null)
+            {
+                authBuilder.AddGoogle(options => googleConfig.Bind(options));
+            }
+
             services.AddMvc();
 
             var httpClient = new HttpClient
@@ -61,6 +73,8 @@ namespace FrontEnd
             }
 
             app.UseStaticFiles();
+
+            app.UseAuthentication();
 
             app.UseMvc(routes =>
             {
