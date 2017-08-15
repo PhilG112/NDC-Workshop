@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using ConferenceDTO;
+using System.Linq;
 
 namespace FrontEnd.Services
 {
@@ -118,6 +119,42 @@ namespace FrontEnd.Services
             response.EnsureSuccessStatusCode();
 
             return await response.Content.ReadAsJsonAsync<List<SearchResult>>();
+        }
+
+        public async Task<List<SessionResponse>> GetSessionsByAttendeeAsync(string name)
+        {
+            var sessionsTask = GetSessionsAsync();
+            var attendeeTask = GetAttendeeAsync(name);
+
+            await Task.WhenAll(sessionsTask, attendeeTask);
+
+            var sessions = await sessionsTask;
+            var attendee = await attendeeTask;
+
+            if (attendee == null)
+            {
+                return new List<SessionResponse>();
+            }
+
+            var sessionIds = attendee.Sessions.Select(s => s.ID);
+
+            sessions.RemoveAll(s => !sessionIds.Contains(s.ID));
+
+            return sessions;
+        }
+
+        public async Task AddSessionToAttendeeAsync(string name, int sessionId)
+        {
+            var response = await _httpClient.PostAsync($"/api/attendees/{name}/session/{sessionId}", null);
+
+            response.EnsureSuccessStatusCode();
+        }
+
+        public async Task RemoveSessionFromAttendeeAsync(string name, int sessionId)
+        {
+            var response = await _httpClient.DeleteAsync($"/api/attendees/{name}/session/{sessionId}");
+
+            response.EnsureSuccessStatusCode();
         }
     }
 }

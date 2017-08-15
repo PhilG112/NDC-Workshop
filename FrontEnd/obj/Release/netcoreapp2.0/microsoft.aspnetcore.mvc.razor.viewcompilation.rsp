@@ -1,0 +1,17 @@
+C:\Users\Phillip\Documents\Visual Studio 2017\Projects\ConferencePlanner\FrontEnd
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=FrontEnd
+--content-root=C:\Users\Phillip\Documents\Visual Studio 2017\Projects\ConferencePlanner\FrontEnd
+--file=C:\Users\Phillip\Documents\Visual Studio 2017\Projects\ConferencePlanner\FrontEnd\Pages\Admin\EditSession.cshtml
+--file=C:\Users\Phillip\Documents\Visual Studio 2017\Projects\ConferencePlanner\FrontEnd\Pages\Error.cshtml
+--file=C:\Users\Phillip\Documents\Visual Studio 2017\Projects\ConferencePlanner\FrontEnd\Pages\Index.cshtml
+--file=C:\Users\Phillip\Documents\Visual Studio 2017\Projects\ConferencePlanner\FrontEnd\Pages\Login.cshtml
+--file=C:\Users\Phillip\Documents\Visual Studio 2017\Projects\ConferencePlanner\FrontEnd\Pages\MyAgenda.cshtml
+--file=C:\Users\Phillip\Documents\Visual Studio 2017\Projects\ConferencePlanner\FrontEnd\Pages\Search.cshtml
+--file=C:\Users\Phillip\Documents\Visual Studio 2017\Projects\ConferencePlanner\FrontEnd\Pages\Session.cshtml
+--file=C:\Users\Phillip\Documents\Visual Studio 2017\Projects\ConferencePlanner\FrontEnd\Pages\Speaker.cshtml
+--file=C:\Users\Phillip\Documents\Visual Studio 2017\Projects\ConferencePlanner\FrontEnd\Pages\Welcome.cshtml
+--file=C:\Users\Phillip\Documents\Visual Studio 2017\Projects\ConferencePlanner\FrontEnd\Pages\_Layout.cshtml
+--file=C:\Users\Phillip\Documents\Visual Studio 2017\Projects\ConferencePlanner\FrontEnd\Pages\_ValidationScriptsPartial.cshtml
+--file=C:\Users\Phillip\Documents\Visual Studio 2017\Projects\ConferencePlanner\FrontEnd\Pages\_ViewImports.cshtml
+--file=C:\Users\Phillip\Documents\Visual Studio 2017\Projects\ConferencePlanner\FrontEnd\Pages\_ViewStart.cshtml

@@ -13,15 +13,15 @@ namespace FrontEnd.Pages
     public class IndexModel : PageModel
     {
         protected readonly IApiClient _apiClient;
-        private readonly IAuthorizationService _authService;
 
-        public IndexModel(IApiClient apiClient, IAuthorizationService authService)
+        public IndexModel(IApiClient apiClient)
         {
             _apiClient = apiClient;
-            _authService = authService;
         }
 
         public IEnumerable<IGrouping<DateTimeOffset?, SessionResponse>> Sessions { get; set; }
+
+        public IList<int> UserSessions { get; set; }
 
         public IEnumerable<(int Offset, DayOfWeek? DayofWeek)> DayOffsets { get; set; }
 
@@ -36,12 +36,14 @@ namespace FrontEnd.Pages
 
         public async Task OnGetAsync(int day = 0)
         {
-            var authResult = await _authService.AuthorizeAsync(User, "Admin");
-            IsAdmin = authResult.Succeeded;
-
             CurrentDayOffset = day;
 
-            var sessions = await _apiClient.GetSessionsAsync();
+            var userSessions = await _apiClient.GetSessionsByAttendeeAsync(User.Identity.Name);
+
+            UserSessions = userSessions.Select(u => u.ID).ToList();
+
+
+            var sessions = await GetSessionsAsync();
 
             var startDate = sessions.Min(s => s.StartTime?.Date);
             var endDate = sessions.Max(s => s.EndTime?.Date);
@@ -57,6 +59,25 @@ namespace FrontEnd.Pages
                                .OrderBy(s => s.TrackId)
                                .GroupBy(s => s.StartTime)
                                .OrderBy(g => g.Key);
+        }
+
+        public async Task<IActionResult> OnPostAsync(int sessionId, int day)
+        {
+            await _apiClient.AddSessionToAttendeeAsync(User.Identity.Name, sessionId);
+
+            return RedirectToPage(new { day });
+        }
+
+        public async Task<IActionResult> OnPostRemoveAsync(int sessionId, int day)
+        {
+            await _apiClient.RemoveSessionFromAttendeeAsync(User.Identity.Name, sessionId);
+
+            return RedirectToPage(new { day });
+        }
+
+        protected virtual Task<List<SessionResponse>> GetSessionsAsync()
+        {
+            return _apiClient.GetSessionsAsync();
         }
     }
 }

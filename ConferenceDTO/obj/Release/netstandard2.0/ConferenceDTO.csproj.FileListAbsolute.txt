@@ -1,0 +1,9 @@
+C:\Users\Phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\bin\Release\netstandard2.0\ConferenceDTO.deps.json
+C:\Users\Phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\bin\Release\netstandard2.0\ConferenceDTO.dll
+C:\Users\Phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\bin\Release\netstandard2.0\ConferenceDTO.pdb
+C:\Users\Phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\obj\Release\netstandard2.0\ConferenceDTO.csprojResolveAssemblyReference.cache
+C:\Users\Phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\obj\Release\netstandard2.0\ConferenceDTO.csproj.CoreCompileInputs.cache
+C:\Users\Phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\obj\Release\netstandard2.0\ConferenceDTO.AssemblyInfoInputs.cache
+C:\Users\Phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\obj\Release\netstandard2.0\ConferenceDTO.AssemblyInfo.cs
+C:\Users\Phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\obj\Release\netstandard2.0\ConferenceDTO.dll
+C:\Users\Phillip\documents\visual studio 2017\Projects\ConferencePlanner\ConferenceDTO\obj\Release\netstandard2.0\ConferenceDTO.pdb

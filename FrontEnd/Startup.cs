@@ -57,16 +57,21 @@ namespace FrontEnd
                 authBuilder.AddGoogle(options => googleConfig.Bind(options));
             }
 
-            services.AddMvc()
-                .AddRazorPagesOptions(options =>
-                {
-                    options.Conventions.AuthorizeFolder("/Admin", "Admin");
-                });
+            services.AddMvc(options => 
+            {
+                options.Filters.AddService<RequireLoginFilter>();
+            })
+            .AddRazorPagesOptions(options =>
+            {
+                options.Conventions.AuthorizeFolder("/Admin", "Admin");
+            });
 
             var httpClient = new HttpClient
             {
                 BaseAddress = new Uri(Configuration["serviceUrl"])
             };
+
+            services.AddSingleton<RequireLoginFilter>();
             services.AddSingleton(httpClient);
             services.AddSingleton<IApiClient, ApiClient>();
         }
