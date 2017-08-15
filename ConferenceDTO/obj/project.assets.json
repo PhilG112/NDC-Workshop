@@ -3183,12 +3183,15 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Phillip\\Documents\\Visual Studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj",
+      "projectUniqueName": "C:\\Users\\Phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj",
       "projectName": "ConferenceDTO",
-      "projectPath": "C:\\Users\\Phillip\\Documents\\Visual Studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj",
+      "projectPath": "C:\\Users\\Phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\ConferenceDTO.csproj",
       "packagesPath": "C:\\Users\\Phillip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Phillip\\Documents\\Visual Studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\obj\\",
+      "outputPath": "C:\\Users\\Phillip\\documents\\visual studio 2017\\Projects\\ConferencePlanner\\ConferenceDTO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3218,15 +3221,15 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "System.ComponentModel.Annotations": {
+            "target": "Package",
+            "version": "4.4.0"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
-          },
-          "System.ComponentModel.Annotations": {
-            "target": "Package",
-            "version": "4.4.0"
           },
           "Newtonsoft.Json": {
             "target": "Package",
